@@ -22,7 +22,7 @@
     text-transform: capitalize;
     transition: 0.2s linear;
     font-family:  "Rubik", sans-serif;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 body{
@@ -41,6 +41,7 @@ section{
     left: 0;
     right: 0;
     z-index: 99; /*headerr sempre na frente de tudo*/
+    background-color: #01010394;
     
     
 }
@@ -128,7 +129,6 @@ section{
 .content p{
     color: var(--cor-clara);
     font-size: 2rem;
-    font-weight: 800;
     font-weight: 200;
     line-height: 1.8;
     padding: 1rem 0;
@@ -137,13 +137,166 @@ section{
 .btn{
     background-color: var(--cor-destaques-amarelo);
     color: var(--cor-clara);
+    font-size: 1.7rem;
     padding: 1rem 3rem;
     cursor: pointer;
     margin-top: 1rem;
     display: inline-block;
+    border-radius: 5px;
 }
 
-.btn a{
-    color: var(--cor-clara);
-    font-size: 1.7rem;
+.btn:hover{
+    color: var(--cor-destaques-amarelo);
+    background-color: var(--cor-clara);
 }
+
+.title{
+    color: var(--cor-clara);
+    font-family: var(--fonte-destaque);
+    font-size: 4rem;
+    text-align: center;
+    
+    
+}
+
+.title span{
+    color: var(--cor-destaques-amarelo);
+}
+
+.sobre .row{
+   display: flex;
+   align-items: center;
+   background-color: #ff8c005d;
+   gap: 3rem;
+   height: 550px;
+   margin-top: 3rem;
+   border-radius: 5px;
+   
+}
+
+.sobre .row .content{
+    width: 550px;
+}
+
+.sobre .row .content h3{
+    font-size: 5rem;
+}
+
+.sobre .row .content p{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-weight: 200;
+    width: 500px;
+    margin-top: 1.5rem;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.menu .box-container .box{
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    cursor: pointer;
+}
+
+.menu .box-container .box:hover{
+    background-color: #ffffff2a;
+
+}
+
+.menu .box-container .box img{
+    height: 10rem;
+}
+
+.menu .box-container .box h3{
+    font-size: 1.8rem;
+    color: var(--cor-clara);
+    font-family: var(--fonte-destaque);
+    margin-top: 0.5rem;
+}
+
+.menu .box-container .box .price{
+    color: var(--cor-clara);
+    font-size: 2.2rem;
+    padding: 1rem 0.5rem;
+}
+
+.menu .box-container .box span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: 200;
+}
+
+.avaliacao .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.avaliacao .box-container .box .quote{
+    width: 30px;
+    padding-bottom: 1rem;
+}
+
+.avaliacao .box-container .box p{
+    color: var(--cor-clara);
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    font-weight: lighter;
+    line-height: 1.5rem;
+}
+
+.avaliacao .box-container .box .img-cliente{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    padding-bottom: 1rem;
+}
+
+.avaliacao .box-container .box h3{
+    color: var(--cor-clara);
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+}
+
+
+.endereco{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.endereco iframe{
+    margin-top: 3rem;
+    border-radius: 5px;
+}
+
+.contato .form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer .share{
+    padding: 1rem 0;
+    
+}
+
+.footer .share img{
+    cursor: pointer;
+    margin: 0.3rem;
+    padding: 0.5rem;
+}
+
+
+
+
