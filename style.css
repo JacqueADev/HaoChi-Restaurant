@@ -22,8 +22,10 @@
     text-transform: capitalize;
     transition: 0.2s linear;
     font-family:  "Rubik", sans-serif;
-    /*overflow: hidden;*/
+    scroll-behavior: smooth;
 }
+
+
 
 body{
     background-color: var(--cor-background);
